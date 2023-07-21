@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif, sans-serif;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background:transparent;
+}
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+li,
+a,
+button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color:#ffffff;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+
+header > button {
+    padding: 9px 15px;
+    background-color:rgba(54, 230, 11, 0.95);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header > button:hover {
+    background-color: rgba(245, 64, 10, 0.8);
+}
+
+/* Content */
+.wrapper {
+    background: url('../task2/dj.jpeg') no-repeat center center / cover;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1; 
+}
+
+.wrapper:before {
+    position: fixed;
+    content: '';
+    background-image: linear-gradient(to right, rgba(32,40,119,0.95), rgba(45, 38, 124, 0.95), rgba(44, 23, 63, 0.9), rgba(82, 39, 141, 0.85), rgba(150, 41, 230, 0.95));
+    width: 100%;
+    height: 120%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.content {
+    display: flex;
+    padding: 28px 10%;
+    justify-content: space-between;
+    color: #f7e2e2;
+}
+
+.fashion h2 {
+    font-size: 40px;
+}
+
+.fashion p {
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 2;
+
+}
+.party1 {
+    color:rgba(231, 217, 16, 0.95)
+}
+
+.party2 {
+    color:rgba(238, 144, 180, 0.9)
+}
+.greetings {
+    font-size:80px;
+    font-family:'','Times New Roman', serif;
+    animation-name: colorChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+footer{
+    background-color:transparent;
+}
+.footercontainer{
+    height: 100px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+    color: transparent;
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 5px;
+    background-color:transparent;
+    margin: 10px;
+    border-radius: 50;
+}
+.socialicons a i{
+    font-size: 1em;
+    color: #ffffff;
+    opacity: 0.9;
+}
+.socialicons a:hover{
+    background-color: transparent;
+    transition: 0.05s;
+}
+.socialicons a:hover i{
+    color: #ebe7e7;
+    transition: 0.5s;
+}
